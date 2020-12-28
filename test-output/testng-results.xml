@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="189892" started-at="2020-12-23T00:30:09 CST" finished-at="2020-12-23T00:33:19 CST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="189892" started-at="2020-12-23T00:30:09 CST" finished-at="2020-12-23T00:33:19 CST">
+      <class name="com.dollardays.testcases.newaccounttest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="beforeClass" is-config="true" duration-ms="39" started-at="2020-12-23T00:30:09 CST" finished-at="2020-12-23T00:30:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="17083" started-at="2020-12-23T00:30:11 CST" finished-at="2020-12-23T00:30:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="FAIL" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="3780" started-at="2020-12-23T00:30:28 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:30:32 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify valid data, TCID=TC1, Lastname=lars, SheetName=Sheet2, Confirmpassword=345.0, Runmode=Yes, Email=abc@gmail.com, Firstname=john, Password=345.0, Number=4.005006E8}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 96 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54255}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir7192_659227027}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2c642baa37e48097076618ecb29518a1
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 96 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54255}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir7192_659227027}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2c642baa37e48097076618ecb29518a1
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+at com.dollardays.pages.newaccount.getdata(newaccount.java:124)
+at com.dollardays.testcases.newaccounttest.createlogin(newaccounttest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="2534" started-at="2020-12-23T00:30:32 CST" finished-at="2020-12-23T00:30:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="13131" started-at="2020-12-23T00:30:35 CST" finished-at="2020-12-23T00:30:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="7017" started-at="2020-12-23T00:30:48 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:30:55 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=verify null data, TCID=TC2, Lastname=, SheetName=Sheet2, Confirmpassword=, Runmode=Yes, Email=, Firstname=, Password=, Number=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1333" started-at="2020-12-23T00:30:55 CST" finished-at="2020-12-23T00:30:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="15356" started-at="2020-12-23T00:30:56 CST" finished-at="2020-12-23T00:31:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="8102" started-at="2020-12-23T00:31:11 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:31:20 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify required fields, TCID=TC3, Lastname=Abcdeffhfhkdfdkl48374n8973n89472, SheetName=Sheet2, Confirmpassword=ab1, Runmode=Yes, Email=charlie@gmail.com, Firstname=CharlieBrown, Password=ab1, Number=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1845" started-at="2020-12-23T00:31:20 CST" finished-at="2020-12-23T00:31:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="13375" started-at="2020-12-23T00:31:21 CST" finished-at="2020-12-23T00:31:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="8610" started-at="2020-12-23T00:31:35 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:31:43 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify lastname field with maxcharacters, TCID=TC4, Lastname=, SheetName=Sheet2, Confirmpassword=, Runmode=Yes, Email=, Firstname=abc, Password=, Number=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1676" started-at="2020-12-23T00:31:43 CST" finished-at="2020-12-23T00:31:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="17092" started-at="2020-12-23T00:31:45 CST" finished-at="2020-12-23T00:32:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="FAIL" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="4474" started-at="2020-12-23T00:32:02 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:32:07 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify invalid data, TCID=TC5, Lastname=d, SheetName=Sheet2, Confirmpassword=2.0, Runmode=Yes, Email=abd, Firstname=e, Password=2.0, Number=456.0}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 592 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54596}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir7376_338633900}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: a7960b31a6e5b6b0562fe4f2dcf40e0e
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 592 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54596}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir7376_338633900}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: a7960b31a6e5b6b0562fe4f2dcf40e0e
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+at com.dollardays.pages.newaccount.getdata(newaccount.java:124)
+at com.dollardays.testcases.newaccounttest.createlogin(newaccounttest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="2464" started-at="2020-12-23T00:32:07 CST" finished-at="2020-12-23T00:32:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="14091" started-at="2020-12-23T00:32:09 CST" finished-at="2020-12-23T00:32:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="9615" started-at="2020-12-23T00:32:23 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:32:33 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify different password, TCID=TC6, Lastname=Lors, SheetName=Sheet2, Confirmpassword=3.0, Runmode=Yes, Email=a2b@gmailc.om, Firstname=Birkey, Password=2.0, Number=3.004005E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1558" started-at="2020-12-23T00:32:33 CST" finished-at="2020-12-23T00:32:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="13886" started-at="2020-12-23T00:32:34 CST" finished-at="2020-12-23T00:32:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="FAIL" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="3329" started-at="2020-12-23T00:32:48 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:32:52 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify all the fields with numbers, TCID=TC7, Lastname=2.0, SheetName=Sheet2, Confirmpassword=5.0, Runmode=Yes, Email=3.0, Firstname=1.0, Password=5.0, Number=4.0}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 510 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54759}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir3144_1547358119}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: e975f753ea536cdf448b4886bda3babc
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_cphContent_txtFName']"}
+  (Session info: chrome=87.0.4280.88)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 510 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-5QL3TF37', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54759}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}), userDataDir=C:\Users\krant\AppData\Local\Temp\scoped_dir3144_1547358119}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=87.0.4280.88, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: e975f753ea536cdf448b4886bda3babc
+*** Element info: {Using=xpath, value=//input[@id='ctl00_cphContent_txtFName']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+at com.dollardays.pages.newaccount.getdata(newaccount.java:124)
+at com.dollardays.testcases.newaccounttest.createlogin(newaccounttest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1982" started-at="2020-12-23T00:32:52 CST" finished-at="2020-12-23T00:32:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="setUpBrowser" is-config="true" duration-ms="13532" started-at="2020-12-23T00:32:54 CST" finished-at="2020-12-23T00:33:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="createlogin(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="createlogin" duration-ms="10392" started-at="2020-12-23T00:33:07 CST" data-provider="dd-dataprovider" finished-at="2020-12-23T00:33:18 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestCase=Verify first and last name field with minimum characters, TCID=TC8, Lastname=l, SheetName=Sheet2, Confirmpassword=kl, Runmode=Yes, Email=kl@gmail.com, Firstname=k, Password=kl, Number=9.008003E9}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createlogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="quit" is-config="true" duration-ms="1562" started-at="2020-12-23T00:33:18 CST" finished-at="2020-12-23T00:33:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dollardays.testcases.newaccounttest@69b794e2]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-12-23T00:33:19 CST" finished-at="2020-12-23T00:33:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.dollardays.testcases.newaccounttest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
