@@ -69,10 +69,10 @@ public class submitrequesttest  extends BaseTest{
 	
 	
 	//entering the datain the form using excel sheet
-	@DDDataProvider(datafile = "testdata/testdata1.xlsx", sheetName = "Sheet3",  testcaseID = "", runmode = "")
+	@DDDataProvider(datafile = "testdata/testdata1.xlsx", sheetName = "Sheet3",  testcaseID = "TC1", runmode = "yes")
 		@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 		public void enteringthedata(Hashtable<String, String> datatable) throws Exception{
-			
+			//tc3  tc5  tc6remove 
 		
 			Thread.sleep(1000);
 			LoginPage loginPage = new LoginPage(driver);

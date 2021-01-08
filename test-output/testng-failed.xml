@@ -8,7 +8,7 @@
     <classes>
       <class name="com.dollardays.testcases.newaccounttest">
         <methods>
-          <include name="createlogin" invocation-numbers="0 4 6"/>
+          <include name="createlogin" invocation-numbers="0"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="quit"/>

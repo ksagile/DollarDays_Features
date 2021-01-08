@@ -36,8 +36,11 @@ public class BaseTest extends MT {
 		try {
 
 			fileInputStream = new FileInputStream(
+				
 					System.getProperty("user.dir") + "\\src\\main\\resources\\application.proerties");
 			props.load(fileInputStream);
+
+					props.load(fileInputStream);
 
 		} catch (Exception e) {
 			throw new Exception("Property file is not found");

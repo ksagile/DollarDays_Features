@@ -20,6 +20,7 @@ private	WebElement sign_in;
 	
 	
 	@FindBy(xpath = "//li[@class='dropdown']//a[@class='dropdown-toggle']")
+	//@FindBy(css="a[role='button']")
 	private WebElement signInButton;
 	
 	public WebElement getsignInButton() {
@@ -29,7 +30,10 @@ private	WebElement sign_in;
 	
 	
 	// create account link
-	@FindBy(xpath="//a[contains(text(),'Create account')]")
+	//@FindBy(xpath="//a[contains(text(),'Create account')]")
+	//@FindBy(xpath="[@id='aspnetForm']/header/div/div/div/div[3]/div/ul/li[1]/ul/li[3]/a")
+	@FindBy(linkText="Create account")
+	
 	private WebElement create_account;
 	
 	public WebElement getcreataccountlink()

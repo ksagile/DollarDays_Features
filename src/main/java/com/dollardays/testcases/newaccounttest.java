@@ -26,17 +26,16 @@ import java.util.Map;
 public class newaccounttest extends BaseTest
 {
 	
-	 @DDDataProvider(datafile = "testdata/testdata1.xlsx", sheetName = "Sheet2",  testcaseID = "", runmode = "Yes")
+	 @DDDataProvider(datafile = "testdata/testdata1.xlsx", sheetName = "Sheet2",  testcaseID = "TC1", runmode = "Yes")
 
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void createlogin(Hashtable<String, String> datatable) throws Exception{
 	
 		ExtentTestManager.getTest().log(Status.INFO, "login testcase");
 		Thread.sleep(1000);
-		//LoginPage lp=new LoginPage(driver);
-		//lp.getSignIn().click();
 		
-	//	System.out.println("I am sleeping");
+		
+	
 		com.dollardays.pages.newaccount create_acc = new com.dollardays.pages.newaccount(driver);
 		create_acc.getsignInButton().click();
 		create_acc.getcreataccountlink().click();
@@ -47,13 +46,19 @@ public class newaccounttest extends BaseTest
 		
 		
 	}
-	 // wanted to take full screen shot of the page, and numbers takign it as a 4.0, and also want to take screen shot for each test case with out overriding. 
 	
-	 
+	/* @DDDataProvider(datafile = "testdata/testdata1.xlsx", sheetName = "Sheet3",  testcaseID = "TC5", runmode = "yes")
+		@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
+		public void loggingin(Hashtable<String, String> datatable) throws Exception{
+			//tc3  tc5  tc6remove 
+		
+			Thread.sleep(1000);
+	 LoginPage loginPage = new LoginPage(driver);
+		loginPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
 	}
 
-
-
+*/
+}
 
 
 
